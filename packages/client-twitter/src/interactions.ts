@@ -152,7 +152,7 @@ export class TwitterInteractionClient {
                             const userTweets = (
                                 await this.client.twitterClient.fetchSearchTweets(
                                     `from:${username}`,
-                                    3,
+                                    20,
                                     SearchMode.Latest
                                 )
                             ).tweets;
@@ -165,7 +165,7 @@ export class TwitterInteractionClient {
                                         this.client.lastCheckedTweetId;
                                 const isRecent =
                                     Date.now() - tweet.timestamp * 1000 <
-                                    2 * 60 * 60 * 1000;
+                                    24 * 60 * 60 * 1000;
 
                                 elizaLogger.log(`Tweet ${tweet.id} checks:`, {
                                     isUnprocessed,
