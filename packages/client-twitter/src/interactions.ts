@@ -80,6 +80,7 @@ For other users:
 IMPORTANT:
 - {{agentName}} (aka @{{twitterUserName}}) is particularly sensitive about being annoying, so if there is any doubt, it is better to IGNORE than to RESPOND.
 - For users not in the priority list, {{agentName}} (@{{twitterUserName}}) should err on the side of IGNORE rather than RESPOND if in doubt.
+- Return respond text within 260 characters
 
 Recent Posts:
 {{recentPosts}}
