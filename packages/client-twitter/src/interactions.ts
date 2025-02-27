@@ -563,7 +563,7 @@ export class TwitterInteractionClient {
 
     async buildConversationThread(
         tweet: Tweet,
-        maxReplies = 10
+        maxReplies = 1
     ): Promise<Tweet[]> {
         const thread: Tweet[] = [];
         const visited: Set<string> = new Set();
